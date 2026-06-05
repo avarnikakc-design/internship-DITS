@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | SQL Migrator</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/sidebar.css" />
+</head>
+<body>
+  <div id="sidebar-container"></div>
+  <div class="page-content">
+    <div id="header-container"></div>
+    <main class="content-inner">
+      <section class="card">
+        <div class="header-bar">
+          <div>
+            <p class="small-text">About the platform</p>
+            <h2>SQL Migrator</h2>
+          </div>
+        </div>
+        <p>SQL Migrator is a backend-first migration solution that delivers secure, auditable database migration, import/export workflows, schema generation, validation, and reporting from a single dashboard experience.</p>
+      </section>
+
+      <section class="card">
+        <div class="header-bar">
+          <h3>Core Capabilities</h3>
+        </div>
+        <ul class="small-text">
+          <li>SQL-to-SQL migration across relational engines with datatype mapping and migration history.</li>
+          <li>CSV and Excel file import support for direct load into target databases.</li>
+          <li>SQL export to CSV/Excel for data extraction and reporting use cases.</li>
+          <li>Schema generation, validation checks, and compatibility analysis for safer migrations.</li>
+          <li>Role-based admin and user access with audit-ready migration history.</li>
+        </ul>
+      </section>
+
+      <section class="card grid-two">
+        <div>
+          <h3>Supported Databases</h3>
+          <p class="small-text">MySQL, PostgreSQL, Oracle, SQLite, SQL Server</p>
+        </div>
+        <div>
+          <h3>Technology Stack</h3>
+          <p class="small-text">Flask, Flask-RESTful, JWT authentication, SQLAlchemy, Pandas, OpenPyXL, FPDF, and Python 3.12+</p>
+        </div>
+      </section>
+
+      <section class="card grid-two">
+        <div>
+          <h3>Internal Architecture</h3>
+          <p class="small-text">The backend separates configuration, authentication, conversion logic, database connectors, processors, reports, and API routes for clean, maintainable service design.</p>
+        </div>
+        <div>
+          <h3>Operational Focus</h3>
+          <p class="small-text">Designed for migration workflows, the platform emphasizes secure credential handling, structured history tracking, and reusable report generation.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Release Notes</h3>
+        <p class="small-text">SQL Migrator v1.0.0 provides a polished backend migration engine and dashboard-ready API layer, with extensibility for frontend integration and future asynchronous job handling.</p>
+      </section>
+    </main>
+  </div>
+  <script src="../js/api.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/sidebar.js"></script>
+  <script>if (requireAuth()) initSidebar();</script>
+</body>
+</html>
